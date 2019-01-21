@@ -1,3 +1,6 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
 .logo {
   width: 40px;
   border: 0;
@@ -7,7 +10,7 @@
 }
 
 .navbar-brand {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive;
   letter-spacing: 3px;
 }
 
@@ -29,16 +32,16 @@
 }
 
 .navbar-collapse {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav-item a {
-  border: 1px solid transparent ;
+  border: 1px solid transparent;
 }
 
 .nav-item .nav-link:hover {
-  border: cyan solid 1px ;
-  border-radius:5%;
+  border: cyan solid 1px;
+  border-radius: 5%;
   color: white !important;
 }
 
@@ -50,13 +53,12 @@
 
 .top-content-intro-msg {
   color: white;
-  padding-top:20%; 
+  padding-top: 20%;
 }
 
 .top-content-intro-msg-second {
   font-style: italic;
-  padding-bottom:10%;
-
+  padding-bottom: 10%;
 }
 
 @media (min-width: 769px) {
@@ -71,4 +73,53 @@
     color: white;
     font-size: 1.25em;
   }
+}
+
+@media (min-width:769px) {
+  .section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2.75em;
+    margin: 1em;
+  }
+}
+
+@media (max-width:769px) {
+  .section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 1.75em;
+    margin: 1em;
+  }
+  .front-end-skills h3 {
+    font-size:1.1em;
+  }
+}
+
+ul li {
+  list-style: none;
+}
+
+.skills-list ul {
+  display:flex;
+}
+
+.skills-list ul li span {
+  display: block;
+}
+.skills-list ul li {
+  margin-right:10px;
+}
+.front-end-skills {
+  display: inline-flex;
+}
+
+.front-end-skills h3 {
+  margin: auto;
+}
+
+#skills {
+  margin: 1em;
 }
