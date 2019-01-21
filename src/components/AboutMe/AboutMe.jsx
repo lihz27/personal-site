@@ -6,7 +6,7 @@ const AboutMe = () => {
       <h2 className="section-title">Skills</h2>
       <div className="skills-list">
         <div className="front-end-skills">
-          <h3>Front-end</h3>
+          <span>Front - end</span>
           <ul>
             <li>
               <i className="fab fa-html5 fa-3x" />
@@ -24,7 +24,20 @@ const AboutMe = () => {
               <i className="fab fa-react fa-3x" />
               <span>React</span>
             </li>
+            <li>
+              <i
+                className="fas fa-mobile-alt fa-3x"
+                id="responsive-design-icon"
+              />
+              <span>
+                Responsive <br />
+                Design
+              </span>
+            </li>
           </ul>
+          <div className="back-end-skills">
+            <span>Back - end</span>
+          </div>
         </div>
       </div>
     </section>
