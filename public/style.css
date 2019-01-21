@@ -1,0 +1,43 @@
+.logo {
+  width: 40px;
+  border: 0;
+  text-indent: -99999px;
+  animation: App-logo-spin infinite 20s linear;
+  opacity: 0;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 3px;
+}
+
+.navbar-brand:hover .logo {
+  opacity: 1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1em;
+}
+
+.navbar-collapse {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav-item a {
+  border: 1px solid transparent ;
+}
+
+.nav-item .nav-link:hover {
+  border: cyan solid 1px ;
+  border-radius:5%;
+  color: white !important;
+}
