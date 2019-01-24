@@ -206,3 +206,23 @@ footer {
     line-height:2.2;
   }
 } */
+.active {
+  background-color:blue;
+}
+
+.portfolio {
+  overflow:hidden;
+  border-radius:10px;
+}
+.portfolio img:hover {
+  transform: scale(1.2);
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.portfolio img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
