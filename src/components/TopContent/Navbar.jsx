@@ -4,7 +4,7 @@ import logo from "./logo.svg";
 const Navbar = () => {
   return (
     <div >
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="top-navbar" className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a className="navbar-brand" href="#">
           <img className="logo" src={logo} />
           <span >Jack Li</span>

@@ -4,7 +4,20 @@ const AboutMe = () => {
   return (
     <section id="skills">
       <h2 className="section-title">Skills</h2>
+      <div className="container">
+        <div className="row">
+        <div className="col-md-12">
+          <button className="btn btn-dark">Download CV</button>
+        </div>
+        </div>
+
+      </div>
       <div className="skills-list">
+      {/* <div className="testFlex">
+        <span>Front-End</span>
+        <span>Back-End</span>
+        <span>Dev-Tools</span>
+      </div> */}
         <div className="front-end-skills">
           <span>Front - end</span>
           <ul>
@@ -35,8 +48,47 @@ const AboutMe = () => {
               </span>
             </li>
           </ul>
-          <div className="back-end-skills">
+          <div className="front-end-skills">
             <span>Back - end</span>
+            <ul>
+              <li>
+                <i className="fab fa-node fa-3x" />
+                <span>NodeJS</span>
+              </li>
+              <li>
+                <i className="fas fa-server fa-3x" /> 
+                <span>Express</span>
+              </li>
+              <li>
+                <i className="fas fa-cogs fa-3x" /> 
+                <span>Restful API</span>
+              </li>
+              <li>
+                <i className="fas fa-database fa-3x" /> 
+                <span>SQL<br/>NoSQL<br/> Database</span>
+              </li>
+            </ul>
+          </div>
+          <div className="front-end-skills">
+            <span>Dev Tools</span>
+            <ul>
+              <li>
+              <i className="fab fa-git fa-3x"></i>
+                <span>Git</span>
+              </li>
+              <li>
+                <i className="fab fa-aws fa-3x" /> 
+                <span>AWS</span>
+              </li>
+              <li>
+                <i className="fas fa-cogs fa-3x" /> 
+                <span>Webpack<br/>Babel</span>
+              </li>
+              <li>
+                <i className="fas fa-project-diagram fa-3x" /> 
+                <span>Agile Methodology</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
