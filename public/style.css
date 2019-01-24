@@ -154,3 +154,55 @@ ul li {
   align-content: flex-start;
 } */
 
+#contact > .container {
+  text-align: left;
+}
+
+footer {
+  background-color: #212529;
+  position: absolute;
+  width:100%;
+  margin-top: 1.5em;
+  padding-top: 1em;
+}
+
+.copyright p {
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.social-media-buttons {
+  display:flex;
+  justify-content: space-around
+}
+
+.social-media-buttons li {
+  margin-right: 1em;
+}
+
+.social-media-buttons li a {
+  display: block;
+    width: 2.75em;
+    height: 2.75em;
+    border-radius: 100%;
+    color: #ccc;
+    line-height: 3.5;
+}
+
+.social-media-buttons li a:hover {
+  /* color: #ccc; */
+  background-color: #fff;
+  color: #212529;
+  transition: all .5s;
+}
+
+/* @media (min-width: 525px) {
+  .contact-input {
+    width:80%;
+  }
+  .contact-labels {
+    width:20%;
+    float: left;
+    line-height:2.2;
+  }
+} */

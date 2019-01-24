@@ -4,6 +4,14 @@ const AboutMe = () => {
   return (
     <section id="skills">
       <h2 className="section-title">Skills</h2>
+      <div className="container">
+        <div className="row">
+        <div className="col-md-12">
+          <button className="btn btn-dark">Download CV</button>
+        </div>
+        </div>
+
+      </div>
       <div className="skills-list">
       {/* <div className="testFlex">
         <span>Front-End</span>
@@ -65,7 +73,7 @@ const AboutMe = () => {
             <span>Dev Tools</span>
             <ul>
               <li>
-              <i class="fab fa-git fa-3x"></i>
+              <i className="fab fa-git fa-3x"></i>
                 <span>Git</span>
               </li>
               <li>
