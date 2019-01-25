@@ -1,13 +1,20 @@
 import React from "react";
 import logo from "./logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ height }) => {
   return (
-    <div >
-      <nav id="top-navbar" className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div>
+      <nav
+        id="top-navbar"
+        className={
+          height
+            ? "navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+            : "navbar fixed-top navbar-expand-lg navbar-dark"
+        }
+      >
         <a className="navbar-brand" href="#">
           <img className="logo" src={logo} />
-          <span >Jack Li</span>
+          <span>Jack Li</span>
         </a>
         <button
           className="navbar-toggler"
