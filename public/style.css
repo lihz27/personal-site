@@ -228,14 +228,24 @@ footer {
 }
 
 #top-navbar {
-  background: rgba(0, 0, 0, 0.3); 
+  background: rgba(0, 0, 0, 0.6); 
 }
 
 .navbar-dark {
-  background-color: #343a40;
+  background-color: #212529;
   -o-transition: all .4s;
   -moz-transition: all .4s;
   -webkit-transition: all .4s;
   -ms-transition: all .4s;
   transition: all .4s;
+}
+
+#contact h3 {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.success-msg {
+  padding:0.5em;
 }

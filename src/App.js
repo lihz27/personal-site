@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./components/TopContent/Navbar";
 import TopContent from "./components/TopContent/TopContent";
-import AboutMe from "./components/AboutMe/AboutMe";
+import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import { useState, useEffect } from 'react';
 
@@ -13,13 +13,10 @@ const App  = () => {
   const [height, setHeight] = useState(false);
   const updateWindowHeight = () => {
     window.onscroll = () => {
-      console.log(window.scrollY);
       if (window.scrollY >= 200) {
         setHeight(true);
-        // setSlider('');
       } else if (window.scrollY > 0 || window.scrollY < 50) {
         setHeight(false);
-        // setSlider('');
       }
     }
   }
@@ -31,7 +28,7 @@ const App  = () => {
       <div className="App">
         <Navbar height={height}/>
         <TopContent />
-        <AboutMe />
+        <Skills />
         <Projects />
         <Contact />
         <Footer />
