@@ -92,6 +92,10 @@ body {
   .skills-list ul li {
     margin-right: 1.25em;
   }
+  .contact-form {
+    display:flex;
+    flex-wrap:wrap;
+  }
 }
 
 @media (max-width: 769px) {
@@ -206,3 +210,127 @@ footer {
     line-height:2.2;
   }
 } */
+.active {
+  background-color:blue;
+}
+
+.portfolio {
+  overflow:hidden;
+  border-radius:10px;
+}
+.portfolio img:hover {
+  transform: scale(1.2);
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.portfolio img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+#top-navbar {
+  background: rgba(0, 0, 0, 0.6); 
+}
+
+.navbar-dark {
+  background-color: #212529;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
+  -ms-transition: all .4s;
+  transition: all .4s;
+}
+
+#contact h3 {
+  margin-bottom: 1em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.success-msg {
+  padding:0.5em;
+}
+
+.skills-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.dev {
+  font-size:2em;
+}
+
+.skills-list h3 {
+  font-weight: bold;
+  margin-bottom: 0.75em;
+} 
+
+.submit-btn {
+  margin-left: 1em;
+}
+
+.portfolio-caption {
+  padding: 1em;
+}
+
+.portfolio-caption h4 {
+  font-weight:600;
+}
+
+.cv-download-btn {
+  padding: 11px 35px;
+  color: #fff;
+  background: #333;
+  border: 2px solid #333;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.cv-download-btn:hover {
+  background-color:white;
+  transition: 0.5s all;
+  color:#212529;
+}
+
+.scrollTop-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.contact-submit {
+  padding: 11px 35px;
+    color: #fff;
+    background: #333;
+    border: 2px solid #333;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.contact-submit:hover {
+  background-color:white;
+  transition: 0.5s all;
+  color:#212529;
+}

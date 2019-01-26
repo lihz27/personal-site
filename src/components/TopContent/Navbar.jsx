@@ -1,13 +1,20 @@
 import React from "react";
 import logo from "./logo.svg";
 
-const Navbar = () => {
+const Navbar = ({ height }) => {
   return (
-    <div >
-      <nav id="top-navbar" className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
-          <img className="logo" src={logo} />
-          <span >Jack Li</span>
+    <div>
+      <nav
+        id="top-navbar"
+        className={
+          height
+            ? "navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+            : "navbar fixed-top navbar-expand-lg navbar-dark"
+        }
+      >
+        <a className="navbar-brand" href="/">
+          <img className="logo" src={logo} alt="logo" />
+          <span>Jack Li</span>
         </a>
         <button
           className="navbar-toggler"
@@ -21,29 +28,30 @@ const Navbar = () => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav nav-pills ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Top <span className="sr-only">(current)</span>
+              <a className="nav-link" href="/">
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#skills">
                 About Me
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#projects">
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Resume
+              <a className="nav-link" href="#skills">
+
+                Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>
