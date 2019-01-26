@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./components/TopContent/Navbar";
 import TopContent from "./components/TopContent/TopContent";
@@ -13,7 +13,7 @@ const App  = () => {
   const [height, setHeight] = useState(false);
   const updateWindowHeight = () => {
     window.onscroll = () => {
-      if (window.scrollY >= 200) {
+      if (window.scrollY >= 180) {
         setHeight(true);
       } else if (window.scrollY > 0 || window.scrollY < 50) {
         setHeight(false);

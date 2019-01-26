@@ -1,99 +1,120 @@
 import React from "react";
 
-const AboutMe = () => {
+const Skills = () => {
   return (
     <section id="skills">
       <h2 className="section-title">Skills</h2>
       <div className="container">
         <div className="row">
-        <div className="col-md-12">
-          <button className="btn btn-dark">Download CV</button>
-        </div>
-        </div>
-
-      </div>
-      <div className="skills-list">
-      {/* <div className="testFlex">
-        <span>Front-End</span>
-        <span>Back-End</span>
-        <span>Dev-Tools</span>
-      </div> */}
-        <div className="front-end-skills">
-          <span>Front - end</span>
-          <ul>
-            <li>
-              <i className="fab fa-html5 fa-3x" />
-              <span>HTML</span>
-            </li>
-            <li>
-              <i className="fab fa-css3-alt fa-3x" />
-              <span>CSS</span>
-            </li>
-            <li>
-              <i className="fab fa-js-square fa-3x" />
-              <span>Javascript</span>
-            </li>
-            <li>
-              <i className="fab fa-react fa-3x" />
-              <span>React</span>
-            </li>
-            <li>
-              <i
-                className="fas fa-mobile-alt fa-3x"
-                id="responsive-design-icon"
-              />
-              <span>
-                Responsive <br />
-                Design
-              </span>
-            </li>
-          </ul>
-          <div className="front-end-skills">
-            <span>Back - end</span>
+          <div className="col-md-4 skills-list">
+            <h3>Front-end Development</h3>
             <ul>
               <li>
-                <i className="fab fa-node fa-3x" />
+                <i className="devicon-html5-plain dev" />
+                <span>HTML</span>
+              </li>
+              <li>
+                <i className="devicon-css3-plain dev" />
+                <span>CSS</span>
+              </li>
+              <li>
+                <i className="devicon-javascript-plain dev" />
+                <span>Javascript</span>
+              </li>
+              <li>
+                <i className="devicon-react-original dev" />
+                <span>
+                  React <br />
+                  Redux
+                </span>
+              </li>
+
+              <li>
+                <i className="devicon-jquery-plain dev" />
+
+                <span>JQuery</span>
+              </li>
+              <li>
+                <i className="devicon-bootstrap-plain dev" />
+
+                <span>Bootstrap</span>
+              </li>
+              <li>
+                <i
+                  className="fas fa-mobile-alt fa-2x"
+                  id="responsive-design-icon"
+                />
+                <span>
+                  Responsive <br />
+                  Design
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-4 skills-list">
+            <h3>Back-end Development</h3>
+            <ul>
+              <li>
+                <i className="fab fa-node fa-2x" />
                 <span>NodeJS</span>
               </li>
               <li>
-                <i className="fas fa-server fa-3x" /> 
+                <i className="fas fa-server fa-2x" />
                 <span>Express</span>
               </li>
               <li>
-                <i className="fas fa-cogs fa-3x" /> 
+                <i className="fas fa-cogs fa-2x" />
                 <span>Restful API</span>
               </li>
               <li>
-                <i className="fas fa-database fa-3x" /> 
-                <span>SQL<br/>NoSQL<br/> Database</span>
+                <i className="fas fa-database fa-2x" />
+                <span>
+                  MongoDB
+                  <br />
+                  MySQL
+                </span>
               </li>
             </ul>
           </div>
-          <div className="front-end-skills">
-            <span>Dev Tools</span>
+          <div className="col-md-4 skills-list">
+            <h3>Dev Tools</h3>
             <ul>
               <li>
-              <i className="fab fa-git fa-3x"></i>
-                <span>Git</span>
+                <i className="fab fa-git fa-2x" />
+                <span>Git </span>
               </li>
               <li>
-                <i className="fab fa-aws fa-3x" /> 
+                <i className="fab fa-aws fa-2x" />
                 <span>AWS</span>
               </li>
               <li>
-                <i className="fas fa-cogs fa-3x" /> 
-                <span>Webpack<br/>Babel</span>
+                <i className="devicon-webpack-plain dev" />
+                <span>
+                  Webpack
+                  <br />
+                  Babel
+                </span>
               </li>
               <li>
-                <i className="fas fa-project-diagram fa-3x" /> 
-                <span>Agile Methodology</span>
+                <i className="fas fa-project-diagram fa-2x" />
+                <span>
+                  Agile <br />
+                  Methodology
+                </span>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+      <div className="col-md-12">
+        
+          <button className="cv-download-btn">
+          <a>            Download CV <i className="fa fa-download" />
+</a>
+          </button>
       </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default Skills;
