@@ -107,11 +107,12 @@ const Skills = () => {
         </div>
       </div>
       <div className="col-md-12">
-        
-          <button className="cv-download-btn">
-          <a>            Download CV <i className="fa fa-download" />
-</a>
-          </button>
+        <button className="cv-download-btn">
+          <a>
+            {" "}
+            Download CV <i className="fa fa-download" />
+          </a>
+        </button>
       </div>
     </section>
   );

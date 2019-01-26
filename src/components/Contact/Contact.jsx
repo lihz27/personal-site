@@ -97,7 +97,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="submit-btn"><button type="submit" className="btn btn-dark">
+                <div className="submit-btn"><button type="submit" className="btn contact-submit">
                   Submit
                 </button></div>
                 

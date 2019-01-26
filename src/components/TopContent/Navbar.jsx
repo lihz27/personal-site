@@ -45,8 +45,9 @@ const Navbar = ({ height }) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
-                Resume
+              <a className="nav-link" href="#skills">
+
+                Skills
               </a>
             </li>
             <li className="nav-item">

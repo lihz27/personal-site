@@ -11,6 +11,11 @@ import Footer from "./components/Footer/Footer";
 
 const App  = () => {
   const [height, setHeight] = useState(false);
+  const scrollToTop = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  };
+
   const updateWindowHeight = () => {
     window.onscroll = () => {
       if (window.scrollY >= 180) {
@@ -19,7 +24,7 @@ const App  = () => {
         setHeight(false);
       }
     }
-  }
+  };
 
   useEffect(() => {
   updateWindowHeight();
@@ -27,6 +32,7 @@ const App  = () => {
     return (
       <div className="App">
         <Navbar height={height}/>
+        {height && <button className="scrollTop-btn" onClick={scrollToTop}>Top</button>}
         <TopContent />
         <Skills />
         <Projects />
