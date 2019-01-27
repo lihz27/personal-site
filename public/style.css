@@ -96,8 +96,12 @@ body {
     display:flex;
     flex-wrap:wrap;
   }
-}
 
+
+}
+.navbar.transparent-bg {
+  background: rgba(0, 0, 0, 0.6); 
+}
 @media (max-width: 769px) {
   .section-title {
     text-transform: uppercase;
@@ -135,11 +139,6 @@ ul li {
   display: block;
 }
 
-
-
-#skills {
-  margin: 1em;
-}
 
 #responsive-design-icon {
   margin-top: 2px;
@@ -231,9 +230,7 @@ footer {
   transition: all 0.8s;
 }
 
-#top-navbar {
-  background: rgba(0, 0, 0, 0.6); 
-}
+
 
 .navbar-dark {
   background-color: #212529;
@@ -292,6 +289,7 @@ footer {
   border-radius: 35px;
   cursor: pointer;
   transition: 0.5s all;
+  outline:none !important;
 }
 
 .cv-download-btn:hover {
@@ -303,16 +301,26 @@ footer {
 .scrollTop-btn {
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 2%;
   z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
+  font-size: 1.25em;
+  outline: none!important;
+  background-color: white;
+  color: black;
   cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  border-radius: 35%;
+  border: solid 1px;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 .contact-submit {
@@ -334,3 +342,4 @@ footer {
   transition: 0.5s all;
   color:#212529;
 }
+

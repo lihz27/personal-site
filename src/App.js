@@ -4,17 +4,13 @@ import Navbar from "./components/TopContent/Navbar";
 import TopContent from "./components/TopContent/TopContent";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect } from "react";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import ScrollTopBtn from "./components/Footer/scrollTopBtn";
 
-const App  = () => {
+const App = () => {
   const [height, setHeight] = useState(false);
-  const scrollToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
 
   const updateWindowHeight = () => {
     window.onscroll = () => {
@@ -23,24 +19,23 @@ const App  = () => {
       } else if (window.scrollY > 0 || window.scrollY < 50) {
         setHeight(false);
       }
-    }
+    };
   };
 
   useEffect(() => {
-  updateWindowHeight();
+    updateWindowHeight();
   }, []);
-    return (
-      <div className="App">
-        <Navbar height={height}/>
-        {height && <button className="scrollTop-btn" onClick={scrollToTop}>Top</button>}
-        <TopContent />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  
-}
+  return (
+    <div className="App">
+      <Navbar height={height} />
+      {height && <ScrollTopBtn />}
+      <TopContent />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;

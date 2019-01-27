@@ -1,15 +1,24 @@
 import React from "react";
 import logo from "./logo.svg";
+import $ from "jquery";
 
 const Navbar = ({ height }) => {
+  const scrollToElement = e => {
+    console.log(e.target.getAttribute("href"));
+    const scrollTarget = e.target.getAttribute("href");
+
+    $("html, body")
+      .stop()
+      .animate({ scrollTop: $(scrollTarget).offset().top - 80 }, 500);
+  };
   return (
     <div>
       <nav
         id="top-navbar"
         className={
           height
-            ? "navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
-            : "navbar fixed-top navbar-expand-lg navbar-dark"
+            ? "navbar fixed-top navbar-expand-lg navbar-dark "
+            : "navbar fixed-top navbar-expand-lg navbar-dark transparent-bg"
         }
       >
         <a className="navbar-brand" href="/">
@@ -34,24 +43,23 @@ const Navbar = ({ height }) => {
                 Home <span className="sr-only">(current)</span>
               </a>
             </li>
+
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
-                About Me
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#projects">
+              <a
+                className="nav-link"
+                href="#projects"
+                onClick={scrollToElement}
+              >
                 Projects
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills">
-
+              <a className="nav-link" href="#skills" onClick={scrollToElement}>
                 Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <a className="nav-link" href="#contact" onClick={scrollToElement}>
                 Contact
               </a>
             </li>
