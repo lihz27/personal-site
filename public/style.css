@@ -61,21 +61,21 @@ body {
   padding-bottom: 10%;
 }
 
-@media (min-width: 769px) {
-  .top-content-intro-msg > .top-content-intro-msg-first {
-    color: white;
-    font-size: 5em;
-  }
-}
-
 @media (max-width: 768px) {
   .top-content-intro-msg > .top-content-intro-msg-second {
     color: white;
     font-size: 1.25em;
   }
+  .slick-arrow {
+    display:none!important;
+  }
 }
 
 @media (min-width: 769px) {
+  .top-content-intro-msg > .top-content-intro-msg-first {
+    color: white;
+    font-size: 5em;
+  }
   .section-title {
     text-transform: uppercase;
     font-weight: bold;
@@ -96,7 +96,13 @@ body {
     display:flex;
     flex-wrap:wrap;
   }
-
+  .slick-prev {
+    left:0px;
+  }
+  
+  .slick-next {
+    right:0px;
+  }
 
 }
 .navbar.transparent-bg {
@@ -231,7 +237,10 @@ footer {
 }
 
 
-
+#projects {
+  background-color: #212529;
+  color: #fff;
+}
 .navbar-dark {
   background-color: #212529;
   -o-transition: all .4s;
@@ -297,6 +306,13 @@ footer {
   transition: 0.5s all;
   color:#212529;
 }
+.scrollTop-btn:hover {
+  background-color: #212529;
+  color: #fff;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
 
 .scrollTop-btn {
   position: fixed;
@@ -334,12 +350,69 @@ footer {
     display: inline-block;
     border-radius: 35px;
     cursor: pointer;
-    transition: 0.5s all;
-}
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;}
 
 .contact-submit:hover {
   background-color:white;
-  transition: 0.5s all;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color:#212529;
 }
 
+.slick-dots li button:before {
+  color:white;
+}
+
+.slick-dots {
+  position:static;
+}
+
+.slick-dots li.slick-active button:before {
+  color:white;
+}
+
+.slick-prev:before, .slick-next:before  {
+  content: '' !important;
+}
+
+.slick-next, .slick-prev {
+  font-size: 15px;
+  line-height: 0;
+  top: 30%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color:#fff;
+  outline: 0;
+  background: 0 0;
+  z-index:1;
+}
+
+.slick-next {
+  right:1.625em;
+}
+.slick-prev {
+  left: 1em;
+}
+.slick-arrow > i {
+  border: solid 1px;
+  opacity: 0.8;
+  background-color: #333;
+}
+
+.fa-3x {
+  font-size:3em;
+}
+
+.slick-arrow > i:hover {
+  opacity: 1;
+  color:#7BC0FF;
+}
+
+.slick-slider {
+  padding-right: 3em;
+  padding-left: 3em;
+}

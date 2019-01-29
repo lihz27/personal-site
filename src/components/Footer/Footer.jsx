@@ -18,7 +18,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" title="Facebook">
+                <a href="#" title="Facebookg">
                   <i className="fab fa-facebook-f fa-2x" />
                 </a>
               </li>

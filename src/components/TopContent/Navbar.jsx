@@ -3,14 +3,14 @@ import logo from "./logo.svg";
 import $ from "jquery";
 
 const Navbar = ({ height }) => {
-  const scrollToElement = e => {
-    console.log(e.target.getAttribute("href"));
-    const scrollTarget = e.target.getAttribute("href");
 
+  const scrollToElement = e => {
+    const scrollTarget = e.target.getAttribute("href");
     $("html, body")
       .stop()
-      .animate({ scrollTop: $(scrollTarget).offset().top - 80 }, 500);
+      .animate({ scrollTop: $(scrollTarget).offset().top - 80 }, 1000);
   };
+  
   return (
     <div>
       <nav
