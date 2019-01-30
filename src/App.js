@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollTopBtn from "./components/Footer/scrollTopBtn";
+import AboutMe from "./components/AboutMe/AboutMe";
 
 const App = () => {
   const [height, setHeight] = useState(false);
@@ -31,6 +32,7 @@ const App = () => {
       <Navbar height={height} />
       {height && <ScrollTopBtn />}
       <TopContent />
+      <AboutMe/>
       <Skills />
       <Projects />
       <Contact />

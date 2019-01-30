@@ -39,10 +39,17 @@ body {
   border: 1px solid transparent;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 .nav-item .nav-link:hover {
-  border: cyan solid 1px;
+  border: #7BC0FF solid 1px;
   border-radius: 5%;
-  color: white !important;
+  color: #7BC0FF !important;
 }
 
 .top-content {
@@ -106,7 +113,7 @@ body {
 
 }
 .navbar.transparent-bg {
-  background: rgba(0, 0, 0, 0.6); 
+  background-color: transparent;
 }
 @media (max-width: 769px) {
   .section-title {
@@ -290,7 +297,7 @@ footer {
   padding: 11px 35px;
   color: #fff;
   background: #333;
-  border: 2px solid #333;
+  border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -300,7 +307,9 @@ footer {
   transition: 0.5s all;
   outline:none !important;
 }
-
+.cv-download-container {
+  margin-bottom:2em;
+}
 .cv-download-btn:hover {
   background-color:white;
   transition: 0.5s all;
@@ -415,4 +424,35 @@ footer {
 .slick-slider {
   padding-right: 3em;
   padding-left: 3em;
+}
+
+#profile-image {
+  border-radius: 50%;
+}
+
+.self-intro {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 1em 0.5em 0.5em 1em;
+  letter-spacing: 1px;
+  margin-bottom: 2.5em;
+  color: #212529;
+}
+
+.self-intro h4 {
+  font-weight: 600;
+}
+
+.self-intro p {
+  text-align:left;
+}
+
+.profile.social-media-buttons {
+  margin-top: 2em;
+  justify-content: center;
+}
+
+#aboutMe {
+  color: #fff;
+  background-color: #212529;
 }

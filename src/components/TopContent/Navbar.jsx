@@ -38,12 +38,17 @@ const Navbar = ({ height }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav nav-pills ml-auto">
+          
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Home <span className="sr-only">(current)</span>
+              <a className="nav-link" href="#aboutMe">
+                About Me <span className="sr-only">(current)</span>
               </a>
             </li>
-
+            <li className="nav-item">
+              <a className="nav-link" href="#skills" onClick={scrollToElement}>
+                Skills
+              </a>
+            </li>
             <li className="nav-item">
               <a
                 className="nav-link"
@@ -53,9 +58,14 @@ const Navbar = ({ height }) => {
                 Projects
               </a>
             </li>
+           
             <li className="nav-item">
-              <a className="nav-link" href="#skills" onClick={scrollToElement}>
-                Skills
+              <a
+                className="nav-link"
+                href="#Blog"
+                onClick={scrollToElement}
+              >
+                Blog
               </a>
             </li>
             <li className="nav-item">
@@ -64,7 +74,7 @@ const Navbar = ({ height }) => {
               </a>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
+          {/* <form className="form-inline my-2 my-lg-0">
             <input
               className="form-control mr-sm-2"
               type="search"
@@ -77,7 +87,7 @@ const Navbar = ({ height }) => {
             >
               Search
             </button>
-          </form>
+          </form> */}
         </div>
       </nav>
     </div>
