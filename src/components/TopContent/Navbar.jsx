@@ -3,14 +3,16 @@ import logo from "./logo.svg";
 import $ from "jquery";
 
 const Navbar = ({ height }) => {
-
   const scrollToElement = e => {
-    const scrollTarget = e.target.getAttribute("href");
+    e.preventDefault();
+    console.log(typeof ($(e.target.hash).offset().top - 80));
+    console.log(height);
+    console.log($(e.target.hash).offset().top - 80);
     $("html, body")
       .stop()
-      .animate({ scrollTop: $(scrollTarget).offset().top - 80 }, 1000);
+      .animate({ scrollTop: $(e.target.hash).offset().top - 80 }, 1000);
   };
-  
+
   return (
     <div>
       <nav
@@ -38,18 +40,33 @@ const Navbar = ({ height }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav nav-pills ml-auto">
-          
-            <li className="nav-item">
-              <a className="nav-link" href="#aboutMe">
+            <li
+              className={
+                height >= 485 && height <= 1025 ? "nav-item active" : "nav-item"
+              }
+            >
+              <a className="nav-link" href="#aboutMe" onClick={scrollToElement}>
                 About Me <span className="sr-only">(current)</span>
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className={
+                height >= 1025 && height <= 1380
+                  ? "nav-item active"
+                  : "nav-item"
+              }
+            >
               <a className="nav-link" href="#skills" onClick={scrollToElement}>
                 Skills
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className={
+                height >= 1423 && height <= 1945
+                  ? "nav-item active"
+                  : "nav-item"
+              }
+            >
               <a
                 className="nav-link"
                 href="#projects"
@@ -58,13 +75,9 @@ const Navbar = ({ height }) => {
                 Projects
               </a>
             </li>
-           
+
             <li className="nav-item">
-              <a
-                className="nav-link"
-                href="#Blog"
-                onClick={scrollToElement}
-              >
+              <a className="nav-link" href="#Blog" onClick={scrollToElement}>
                 Blog
               </a>
             </li>

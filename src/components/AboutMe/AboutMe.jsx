@@ -45,7 +45,11 @@ const AboutMe = () => {
             </li>
           </ul>
           <div className="cv-download-container col-md-12">
-            <button className="cv-download-btn">
+            <button
+              className="cv-download-btn"
+              data-toggle="modal"
+              data-target="#exampleModal1"
+            >
               <a>
                 Download CV <i className="fa fa-download" />
               </a>
@@ -56,9 +60,11 @@ const AboutMe = () => {
           <h4>Hello, welcome to my site.</h4>
           <p>
             I am a full stack web developer whom hands-on development experience
-            using React, JavaScript, NodeJS, HTML, CSS, and BootStrap. I am
-            passionate about functionality, aesthetic design with easy to use
-            user interface.
+            using React, JavaScript, NodeJS, HTML, CSS, and BootStrap.
+          </p>
+          <p>
+            I am passionate about functionality, aesthetic design with easy to
+            use user interface.
           </p>
           <p>
             My past experiences in electrical and electronic engeering field

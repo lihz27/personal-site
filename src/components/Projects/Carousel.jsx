@@ -72,7 +72,7 @@ class Carousel extends Component {
                 <a
                   className="portfolio-link"
                   data-toggle="modal"
-                  href="#exampleModal1"
+                  href="#projectModal1"
                 >
                   <img
                     className="img-fluid"
