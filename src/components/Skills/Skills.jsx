@@ -31,7 +31,6 @@ const Skills = () => {
 
               <li>
                 <i className="devicon-jquery-plain dev" />
-
                 <span>JQuery</span>
               </li>
               <li>
@@ -105,14 +104,6 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="col-md-12">
-        <button className="cv-download-btn">
-          <a>
-            {" "}
-            Download CV <i className="fa fa-download" />
-          </a>
-        </button>
       </div>
     </section>
   );

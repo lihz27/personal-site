@@ -1,13 +1,16 @@
 import React from "react";
 import "./App.css";
+import { useState, useEffect } from "react";
 import Navbar from "./components/TopContent/Navbar";
 import TopContent from "./components/TopContent/TopContent";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
-import { useState, useEffect } from "react";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import ScrollTopBtn from "./components/Footer/scrollTopBtn";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Modal from "./components/Projects/Modal";
+import ModalProj1 from "./components/Projects/ModalProj1";
 
 const App = () => {
   const [height, setHeight] = useState(false);
@@ -15,7 +18,7 @@ const App = () => {
   const updateWindowHeight = () => {
     window.onscroll = () => {
       if (window.scrollY >= 180) {
-        setHeight(true);
+        setHeight(window.scrollY);
       } else if (window.scrollY > 0 || window.scrollY < 50) {
         setHeight(false);
       }
@@ -25,13 +28,18 @@ const App = () => {
   useEffect(() => {
     updateWindowHeight();
   }, []);
+
   return (
     <div className="App">
       <Navbar height={height} />
       {height && <ScrollTopBtn />}
       <TopContent />
+      <AboutMe/>
       <Skills />
       <Projects />
+      
+      <Modal/>
+      <ModalProj1/>
       <Contact />
       <Footer />
     </div>

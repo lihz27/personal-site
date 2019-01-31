@@ -5,13 +5,14 @@ body {
   width: 40px;
   border: 0;
   text-indent: -99999px;
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 1s linear;
   opacity: 0;
 }
 
 .navbar-brand {
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
+  font-size:1.5em;
 }
 
 .navbar-brand:hover .logo {
@@ -39,10 +40,28 @@ body {
   border: 1px solid transparent;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 .nav-item .nav-link:hover {
-  border: cyan solid 1px;
+  border: #7BC0FF solid 1px;
   border-radius: 5%;
-  color: white !important;
+  color: #7BC0FF !important;
+}
+
+.nav-item.active .nav-link {
+  border: #7BC0FF solid 1px;
+  border-radius: 5%;
+  color: #7BC0FF !important;
+
+}
+
+li.active {
+  background-color:transparent;
 }
 
 .top-content {
@@ -61,21 +80,21 @@ body {
   padding-bottom: 10%;
 }
 
-@media (min-width: 769px) {
-  .top-content-intro-msg > .top-content-intro-msg-first {
-    color: white;
-    font-size: 5em;
-  }
-}
-
 @media (max-width: 768px) {
   .top-content-intro-msg > .top-content-intro-msg-second {
     color: white;
     font-size: 1.25em;
   }
+  .slick-arrow {
+    display:none!important;
+  }
 }
 
 @media (min-width: 769px) {
+  .top-content-intro-msg > .top-content-intro-msg-first {
+    color: white;
+    font-size: 5em;
+  }
   .section-title {
     text-transform: uppercase;
     font-weight: bold;
@@ -96,12 +115,18 @@ body {
     display:flex;
     flex-wrap:wrap;
   }
-
-
+  .slick-prev {
+    left:0px;
+  }
+  
+  .slick-next {
+    right:0px;
+  }
+  .navbar.transparent-bg {
+    background-color: transparent;
+  }
 }
-.navbar.transparent-bg {
-  background: rgba(0, 0, 0, 0.6); 
-}
+
 @media (max-width: 769px) {
   .section-title {
     text-transform: uppercase;
@@ -231,7 +256,10 @@ footer {
 }
 
 
-
+#projects {
+  background-color: #212529;
+  color: #fff;
+}
 .navbar-dark {
   background-color: #212529;
   -o-transition: all .4s;
@@ -270,7 +298,7 @@ footer {
 }
 
 .portfolio-caption {
-  padding: 1em;
+  margin-top: 1em;
 }
 
 .portfolio-caption h4 {
@@ -281,7 +309,7 @@ footer {
   padding: 11px 35px;
   color: #fff;
   background: #333;
-  border: 2px solid #333;
+  border: 2px solid #fff;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -291,11 +319,20 @@ footer {
   transition: 0.5s all;
   outline:none !important;
 }
-
+.cv-download-container {
+  margin-bottom:2em;
+}
 .cv-download-btn:hover {
   background-color:white;
   transition: 0.5s all;
   color:#212529;
+}
+.scrollTop-btn:hover {
+  background-color: #212529;
+  color: #fff;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .scrollTop-btn {
@@ -334,12 +371,144 @@ footer {
     display: inline-block;
     border-radius: 35px;
     cursor: pointer;
-    transition: 0.5s all;
-}
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;}
 
 .contact-submit:hover {
   background-color:white;
-  transition: 0.5s all;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   color:#212529;
 }
 
+.slick-dots li button:before {
+  color:white;
+}
+
+.slick-dots {
+  position:static;
+}
+
+.slick-dots li.slick-active button:before {
+  color:white;
+}
+
+.slick-prev:before, .slick-next:before  {
+  content: '' !important;
+}
+
+.slick-next, .slick-prev {
+  font-size: 15px;
+  line-height: 0;
+  top: 30%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color:#fff;
+  outline: 0;
+  background: 0 0;
+  z-index:1;
+}
+
+.slick-next {
+  right:1.625em;
+}
+.slick-prev {
+  left: 1em;
+}
+.slick-arrow > i {
+  border: solid 1px;
+  opacity: 0.8;
+  background-color: #333;
+}
+
+.fa-3x {
+  font-size:3em;
+}
+
+.slick-arrow > i:hover {
+  opacity: 1;
+  color:#7BC0FF;
+}
+
+.slick-slider {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+#profile-image {
+  border-radius: 50%;
+}
+
+.self-intro {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 1em 0.5em 0.5em 1em;
+  letter-spacing: 1px;
+  margin: 0 2em 2em 2.5em;
+  color: #212529;
+}
+
+.self-intro h4 {
+  font-weight: 600;
+}
+
+.self-intro p {
+  text-align:left;
+}
+
+.profile.social-media-buttons {
+  margin-top: 2em;
+  justify-content: center;
+}
+
+#aboutMe {
+  color: #fff;
+  background-color: #212529;
+}
+
+.row {
+  margin-right:0;
+  margin-left:0;
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+  .portfolio {
+    margin-top:1em;
+  }
+}
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+  padding-right: 0px !important;
+  overflow-y: auto;
+}
+
+#top-navbar {
+  padding-right:0px !important;
+}
+
+.resume.modal-dialog {
+  max-width:100vw;
+  margin: 1em;
+}
+
+.modal {
+  padding-right:0!important;
+}
+.modal-header > button {
+  font-size: 5em;
+}
+
+.modal-btn {
+  margin-right: 1em;
+}
+
+.modal-btn a {
+  color:#fff;
+  text-decoration: none;
+}
