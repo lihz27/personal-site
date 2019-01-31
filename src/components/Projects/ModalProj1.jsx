@@ -11,8 +11,8 @@ const Modal = () => {
       aria-labelledby="exampleModalLongTitle"
       aria-hidden="true"
     >
-      <div className="resume modal-dialog" role="document">
-        <div className="resume modal-content">
+      <div className="modal-dialog" role="document">
+        <div className="modal-content">
           <div className="modal-header">
             <button
               type="button"
@@ -23,11 +23,11 @@ const Modal = () => {
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div className="modal-body">
-            <div id="page-wrap">
               <div className="container">
                 <div className="row">
                   <div className="col-md-12">
+                  <div className="modal-body">
+
                     <img
                       className="img-fluid"
                       alt="project-preview"
@@ -63,7 +63,6 @@ const Modal = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
