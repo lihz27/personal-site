@@ -76,11 +76,11 @@ const Navbar = ({ height }) => {
               </a>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#Blog" onClick={scrollToElement}>
                 Blog
               </a>
-            </li>
+            </li> */}
             <li className={
                 height >= 1600
                   ? "nav-item active"

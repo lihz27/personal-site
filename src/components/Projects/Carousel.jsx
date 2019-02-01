@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import proj1Preview from "../Projects/ProjectModals/rsz_project1modal.png";
+
+import proj2Preview from "../Projects/ProjectModals/rsz_trailblazerpreview.png";
+import proj3Preview from "../Projects/ProjectModals/rsz_12dealordealpreview.png";
 
 function NextArrow(props) {
   const { className, onClick } = props;
@@ -76,14 +80,14 @@ class Carousel extends Component {
                 >
                   <img
                     className="img-fluid"
-                    src="https://s3-us-west-1.amazonaws.com/project-image-preview/project1Modal.PNG"
+                    src={proj1Preview}
                     alt="project preview"
                   />
                 </a>
               </div>
               <div className="portfolio-caption">
                 <h4> Zillwoah</h4>
-                <p>Web app - MERN</p>
+                <p>Full-Stack Web App - React, MongoDB, NodeJS, NextJS, Websocket</p>
               </div>
             </div>
           </div>
@@ -97,14 +101,14 @@ class Carousel extends Component {
                 >
                   <img
                     className="img-fluid"
-                    src="https://s3-us-west-1.amazonaws.com/project-image-preview/project1Modal.PNG"
+                    src={proj2Preview}
                     alt="project preview"
                   />
                 </a>
               </div>
               <div className="portfolio-caption">
-                <h4> Zillwoah</h4>
-                <p>Web app - MERN</p>
+                <h4> TrailBlazer</h4>
+                <p>Full-Stack Web App - React, PostgreSQL, NodeJS, Bootstrap</p>
               </div>
             </div>
           </div>
@@ -118,14 +122,14 @@ class Carousel extends Component {
                 >
                   <img
                     className="img-fluid"
-                    src="https://s3-us-west-1.amazonaws.com/project-image-preview/project1Modal.PNG"
+                    src={proj3Preview}
                     alt="project preview"
                   />
                 </a>
               </div>
               <div className="portfolio-caption">
-                <h4> Zillwoah</h4>
-                <p>Web app - MERN</p>
+                <h4> Deal Or No Deal</h4>
+                <p>Game - Javascript, JQuery, className</p>
               </div>
             </div>
           </div>

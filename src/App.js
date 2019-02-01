@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollTopBtn from "./components/Footer/scrollTopBtn";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Modal from "./components/Projects/Modal";
-import ModalProj1 from "./components/Projects/ModalProj1";
+import ModalProj1 from "./components/Projects/ProjectModals/ModalProj1";
 
 const App = () => {
   const [height, setHeight] = useState(false);
