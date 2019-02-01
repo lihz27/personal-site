@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import proj1Preview from "../Projects/ProjectModals/rsz_project1modal.png";
-
 import proj2Preview from "../Projects/ProjectModals/rsz_trailblazerpreview.png";
 import proj3Preview from "../Projects/ProjectModals/rsz_12dealordealpreview.png";
 
@@ -97,7 +96,7 @@ class Carousel extends Component {
                 <a
                   className="portfolio-link"
                   data-toggle="modal"
-                  href="#exampleModal1"
+                  href="#projectModal2"
                 >
                   <img
                     className="img-fluid"
@@ -118,7 +117,7 @@ class Carousel extends Component {
                 <a
                   className="portfolio-link"
                   data-toggle="modal"
-                  href="#exampleModal1"
+                  href="#projectModal3"
                 >
                   <img
                     className="img-fluid"

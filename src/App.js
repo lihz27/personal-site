@@ -11,6 +11,8 @@ import ScrollTopBtn from "./components/Footer/scrollTopBtn";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Modal from "./components/Projects/Modal";
 import ModalProj1 from "./components/Projects/ProjectModals/ModalProj1";
+import ModalProj2 from "./components/Projects/ProjectModals/ModalProj2";
+import ModalProj3 from "./components/Projects/ProjectModals/ModalProj3";
 
 const App = () => {
   const [height, setHeight] = useState(false);
@@ -40,6 +42,8 @@ const App = () => {
       
       <Modal/>
       <ModalProj1/>
+      <ModalProj2/>
+      <ModalProj3/>
       <Contact />
       <Footer />
     </div>
