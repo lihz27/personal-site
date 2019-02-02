@@ -5,7 +5,7 @@ const AboutMe = () => {
     <section id="aboutMe">
       <h2 className="section-title">About Me</h2>
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-4 animated slideInLeft">
           <img
             src="https://jarrekk.github.io/Jalpc/static/assets/img/landing/avatar.jpg"
             id="profile-image"
@@ -56,24 +56,24 @@ const AboutMe = () => {
             </button>
           </div>
         </div>
-        <div className="self-intro col-md-6">
-          <h4>Hello, welcome to my site.</h4>
+        <div className="self-intro col-md-6 animated slideInRight">
+          <h4>Hello. Welcome to my site.</h4>
           <p>
-            I am a full stack web developer whom hands-on development experience
+            I am a full stack web developer with hands-on development experience
             using React, JavaScript, NodeJS, HTML, CSS, and BootStrap.
           </p>
           <p>
-            I am passionate about functionality, aesthetic design with easy to
+            I am passionate about functionality and aesthetic design with easy to
             use user interface.
           </p>
           <p>
-            My past experiences in electrical and electronic engeering field
+            My past experiences in electrical and electronic engineering field
             have helped me develop problem-solving skills, multi-tasking
             abilities, and attention to detail.
           </p>
           <p>
             Now, I am looking for a job opportunity in a team environment where
-            I can continue my passion for tech, and while creating a product
+            I can continue my passion for tech while creating a product
             that clients love to use.
           </p>
         </div>

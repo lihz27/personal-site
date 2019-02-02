@@ -31,15 +31,15 @@ const Modal = () => {
     
     <img src="https://media.licdn.com/dms/image/C5603AQExZfKddm1r4w/profile-displayphoto-shrink_200_200/0?e=1554336000&v=beta&t=T1SejHWE05CtVyaUXfQ2luyr2ox5xNUUbUvQJpNcG9g" alt="Profile photo" id="resume-profile" />
 
-    <div id="contact-info" class="vcard">
+    <div id="contact-info" className="vcard">
     
         {/* <!-- Microformats! --> */}
     
         <h1 className="fn">Jack Li</h1>
     
         <p>
-            Cell: <span class="tel">555-666-7777</span><br />
-            Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+            Cell: <span className="tel">555-666-7777</span><br />
+            Email: <a className="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
         </p>
     </div>
             
@@ -52,10 +52,10 @@ const Modal = () => {
         </p>
     </div>
     
-    <div class="clear"></div>
+    <div className="clear"></div>
     
     <dl>
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
         
         <dt>Education</dt>
         <dd>
@@ -64,7 +64,7 @@ const Modal = () => {
                <strong>Minor:</strong> Scale Tending</p>
         </dd>
         
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
         
         <dt>Skills</dt>
         <dd>
@@ -75,7 +75,7 @@ const Modal = () => {
             <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
         </dd>
         
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
         
         <dt>Experience</dt>
         <dd>
@@ -94,20 +94,20 @@ const Modal = () => {
             </ul> 
         </dd>
         
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
         
         <dt>Hobbies</dt>
         <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
         
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
         
         <dt>References</dt>
         <dd>Available on request</dd>
         
-        <dd class="clear"></dd>
+        <dd className="clear"></dd>
     </dl>
     
-    <div class="clear"></div>
+    <div className="clear"></div>
 
 </div>
           </div>

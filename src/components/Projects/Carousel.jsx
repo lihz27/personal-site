@@ -7,11 +7,8 @@ import proj3Preview from "../Projects/ProjectModals/rsz_12dealordealpreview.png"
 function NextArrow(props) {
   const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      onClick={onClick}
-    >
-    <i className="fas fa-chevron-right fa-3x"></i>
+    <div className={className} onClick={onClick}>
+      <i className="fas fa-chevron-right fa-3x" />
     </div>
   );
 }
@@ -19,11 +16,8 @@ function NextArrow(props) {
 function PrevArrow(props) {
   const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      onClick={onClick}
-    >
-    <i className="fas fa-chevron-left fa-3x"></i>
+    <div className={className} onClick={onClick}>
+      <i className="fas fa-chevron-left fa-3x" />
     </div>
   );
 }
@@ -37,8 +31,8 @@ class Carousel extends Component {
       slidesToShow: 3,
       slidesToScroll: 3,
       initialSlide: 0,
-      nextArrow: <NextArrow/>,
-      prevArrow: <PrevArrow/>,
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />,
       responsive: [
         {
           breakpoint: 1024,
@@ -86,7 +80,9 @@ class Carousel extends Component {
               </div>
               <div className="portfolio-caption">
                 <h4> Zillwoah</h4>
-                <p>Full-Stack Web App - React, MongoDB, NodeJS, NextJS, Websocket</p>
+                <p>
+                  Full-Stack Web App - React, MongoDB, NodeJS, NextJS, Websocket
+                </p>
               </div>
             </div>
           </div>
@@ -128,7 +124,7 @@ class Carousel extends Component {
               </div>
               <div className="portfolio-caption">
                 <h4> Deal Or No Deal</h4>
-                <p>Game - Javascript, JQuery, className</p>
+                <p>Game - JavaScript, JQuery, css</p>
               </div>
             </div>
           </div>
@@ -142,7 +138,7 @@ class Carousel extends Component {
                 >
                   <img
                     className="img-fluid"
-                    src="https://s3-us-west-1.amazonaws.com/project-image-preview/project1Modal.PNG"
+                    src={proj1Preview}
                     alt="project preview"
                   />
                 </a>
@@ -163,7 +159,7 @@ class Carousel extends Component {
                 >
                   <img
                     className="img-fluid"
-                    src="https://s3-us-west-1.amazonaws.com/project-image-preview/project1Modal.PNG"
+                    src={proj1Preview}
                     alt="project preview"
                   />
                 </a>
