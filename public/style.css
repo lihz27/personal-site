@@ -131,7 +131,9 @@ li.active {
     transition: all .3s ease-in-out 0s;
   }
 }
-
+.section-title {
+  line-height:2;
+}
 @media (max-width: 769px) {
   .section-title {
     text-transform: uppercase;

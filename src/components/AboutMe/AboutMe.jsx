@@ -58,7 +58,7 @@ const AboutMe = () => {
         </div>
         <div className="self-intro col-md-6 animated slideInRight">
           <h4>Hello. Welcome to my site.</h4>
-          <p>
+          <div><p>
             I am a full stack web developer with hands-on development experience
             using React, JavaScript, NodeJS, HTML, CSS, and BootStrap.
           </p>
@@ -75,7 +75,8 @@ const AboutMe = () => {
             Now, I am looking for a job opportunity in a team environment where
             I can continue my passion for tech while creating a product
             that clients love to use.
-          </p>
+          </p></div>
+          
         </div>
       </div>
     </section>

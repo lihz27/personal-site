@@ -30,15 +30,9 @@ const App = () => {
     window.onscroll = () => {
       if (window.scrollY >= 180) {
         setHeight(window.scrollY);
-        setRenderSkills(true);
-
-      } 
-      if (window.scrollY >= 500) {
         setRenderProjects(true);
 
-      } 
-      if (window.scrollY >= 800) {
-        setRenderProjects(true);
+      
 
       } else if (window.scrollY > 0 || window.scrollY < 50) {
         setHeight(false);
@@ -56,15 +50,14 @@ const App = () => {
       {height && <ScrollTopBtn />}
       <TopContent />
       <AboutMe />
-      {/* <Skills />
-      <Projects /> */}
 
-      { renderSkills? <Suspense fallback={<div>Loading...</div>}>
+
+       <Suspense fallback={<div>Loading...</div>}>
         <Skills />
-      </Suspense>: null}
-      { renderProjects ? <Suspense fallback={<div>Loading...</div>}>
+      </Suspense>
+       <Suspense fallback={<div>Loading...</div>}>
         <Projects />
-      </Suspense>: null}
+      </Suspense>
 
       <Modal />
       { renderProjects ? <Suspense fallback={<div>Loading...</div>}>
