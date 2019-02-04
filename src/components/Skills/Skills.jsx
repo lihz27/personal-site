@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section id="skills">
+    <section id="skills" className="animated zoomIn">
       <h2 className="section-title">Skills</h2>
       <div className="container">
         <div className="row">

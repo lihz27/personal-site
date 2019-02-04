@@ -42,7 +42,7 @@ const Navbar = ({ height }) => {
           <ul className="navbar-nav nav-pills ml-auto">
             <li
               className={
-                height >= 485 && height <= 1025 ? "nav-item active" : "nav-item"
+                height >= 485 && height < 988 ? "nav-item active" : "nav-item"
               }
             >
               <a className="nav-link" href="#aboutMe" onClick={scrollToElement}>
@@ -51,7 +51,7 @@ const Navbar = ({ height }) => {
             </li>
             <li
               className={
-                height >= 1025 && height <= 1380
+                height >= 988 && height < 1380
                   ? "nav-item active"
                   : "nav-item"
               }
@@ -62,7 +62,7 @@ const Navbar = ({ height }) => {
             </li>
             <li
               className={
-                height >= 1423 && height <= 1945
+                height >= 1380 && height < 1600
                   ? "nav-item active"
                   : "nav-item"
               }
@@ -76,12 +76,16 @@ const Navbar = ({ height }) => {
               </a>
             </li>
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" href="#Blog" onClick={scrollToElement}>
                 Blog
               </a>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            <li className={
+                height >= 1600
+                  ? "nav-item active"
+                  : "nav-item"
+              }>
               <a className="nav-link" href="#contact" onClick={scrollToElement}>
                 Contact
               </a>

@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="animated zoomIn">
       <h2 className="section-title">Projects</h2>
       <Carousel />
     </section>
