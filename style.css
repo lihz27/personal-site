@@ -99,7 +99,9 @@ li.active {
     color: white;
     font-size: 5em;
   }
-
+  .self-intro div {
+    font-size: 2vh;
+  }
   .modal-header > button {
     font-size: 5em;
   }
@@ -477,6 +479,8 @@ footer {
 .self-intro p {
   text-align:left;
 }
+
+
 
 .profile.social-media-buttons {
   margin-top: 2em;
