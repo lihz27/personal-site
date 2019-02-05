@@ -45,38 +45,45 @@ const AboutMe = () => {
             </li>
           </ul>
           <div className="cv-download-container col-md-12">
-            <button
-              className="cv-download-btn"
-              data-toggle="modal"
-              data-target="#exampleModal1"
+            <a
+              href="https://docs.google.com/document/d/1b99qLI6zT8nb3oF9wApVmfvdwaRGqg8Nkqf2VhsRpuk/edit#"
+              alt="download resume link"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a>
+              <button
+                className="cv-download-btn"
+                // data-toggle="modal"
+                // data-target="#exampleModal1"
+              >
                 Download CV <i className="fa fa-download" />
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
         </div>
         <div className="self-intro col-md-6 animated slideInRight">
-          <h4>Hello. Welcome to my site.</h4>
-          <div><p>
-            I am a full stack web developer with hands-on development experience
-            using React, JavaScript, NodeJS, HTML, CSS, and BootStrap.
-          </p>
-          <p>
-            I am passionate about functionality and aesthetic design with easy to
-            use user interface.
-          </p>
-          <p>
-            My past experiences in electrical and electronic engineering field
-            have helped me develop problem-solving skills, multi-tasking
-            abilities, and attention to detail.
-          </p>
-          <p>
-            Now, I am looking for a job opportunity in a team environment where
-            I can continue my passion for tech while creating a product
-            that clients love to use.
-          </p></div>
-          
+          <h4>Hello! Welcome.</h4>
+          <div>
+            <p>
+              I am a full stack web developer with hands-on development
+              experience using React, JavaScript, NodeJS, HTML, CSS, and
+              BootStrap.
+            </p>
+            <p>
+              I am passionate about functionality and aesthetic design with easy
+              to use user interface.
+            </p>
+            <p>
+              My past experiences in electrical and electronic engineering field
+              have helped me develop problem-solving skills, multi-tasking
+              abilities, and attention to detail.
+            </p>
+            <p>
+              Now, I am looking for a job opportunity in a team environment
+              where I can continue my passion for tech while creating a product
+              that clients love to use.
+            </p>
+          </div>
         </div>
       </div>
     </section>

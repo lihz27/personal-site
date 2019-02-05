@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import proj1Preview from "../Projects/ProjectModals/rsz_project1modal.png";
 import proj2Preview from "../Projects/ProjectModals/rsz_trailblazerpreview.png";
 import proj3Preview from "../Projects/ProjectModals/rsz_12dealordealpreview.png";
+import proj4Preview from "../Projects/ProjectModals/rsz_personal-sitepreview.png";
 
 function NextArrow(props) {
   const { className, onClick } = props;
@@ -134,42 +135,23 @@ class Carousel extends Component {
                 <a
                   className="portfolio-link"
                   data-toggle="modal"
-                  href="#exampleModal1"
+                  href="#projectModal4"
                 >
                   <img
                     className="img-fluid"
-                    src={proj1Preview}
+                    src={proj4Preview}
                     alt="project preview"
                   />
                 </a>
               </div>
               <div className="portfolio-caption">
-                <h4> Zillwoah</h4>
-                <p>Web app - MERN</p>
+                <h4> My Peronsal Site</h4>
+                <p>Personal Website - React，Boostrap，SPA</p>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-12">
-              <div className="portfolio">
-                <a
-                  className="portfolio-link"
-                  data-toggle="modal"
-                  href="#exampleModal1"
-                >
-                  <img
-                    className="img-fluid"
-                    src={proj1Preview}
-                    alt="project preview"
-                  />
-                </a>
-              </div>
-              <div className="portfolio-caption">
-                <h4> Zillwoah</h4>
-                <p>Web app - MERN</p>
-              </div>
-            </div>
-          </div>
+         
+         
         </Slider>
       </div>
     );
