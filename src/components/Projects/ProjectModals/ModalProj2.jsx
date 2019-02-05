@@ -46,7 +46,7 @@ const Modal = () => {
                   </p>
                   <button type="button" className="modal-btn btn btn-info">
                     <a
-                      href="https://www.brian-louie.online"
+                      href="http://trailblazer.us-east-2.elasticbeanstalk.com/product/49"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
