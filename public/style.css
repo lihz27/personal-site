@@ -1,3 +1,7 @@
+html, body {
+  overflow-x: hidden; 
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -95,6 +99,11 @@ li.active {
     color: white;
     font-size: 5em;
   }
+
+  .modal-header > button {
+    font-size: 5em;
+  }
+  
   .section-title {
     text-transform: uppercase;
     font-weight: bold;
@@ -142,6 +151,9 @@ li.active {
     font-size: 1.75em;
     margin: 0.5em;
     text-decoration: underline;
+  }
+  .modal-header > button {
+    font-size: 2.5em;
   }
   .front-end-skills > span {
     font-size: 1.1em;
@@ -508,7 +520,6 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   padding-right:0!important;
 }
 .modal-header > button {
-  font-size: 5em;
   outline:none;
 }
 .modal-body{
@@ -523,7 +534,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   margin-bottom: 1em;
 }
 
-.modal-btn a {
+.btn a {
   color:#fff;
   text-decoration: none;
 }
