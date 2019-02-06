@@ -546,3 +546,7 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
 :-moz-ui-invalid {
   box-shadow:none;
 }
+
+.hide-section {
+  visibility: hidden;
+}

@@ -1,8 +1,20 @@
 import React from "react";
+import { useState, useEffect } from "react";
 
-const Skills = () => {
+const Skills = ({height}) => {
+  const [visible, setVisible] = useState(false);
+  const toggleStatus = (height) => {
+    console.log(height);
+    if (height === 800) {
+      setVisible(true);
+    }
+  }
+  useEffect(() => {
+    toggleStatus(height);
+    console.log(visible)
+  }, [])
   return (
-    <section id="skills" className="animated zoomIn">
+    <section id="skills" className={visible ? "animated zoomIn" : "hide-section"}>
       <h2 className="section-title">Skills</h2>
       <div className="container">
         <div className="row">
