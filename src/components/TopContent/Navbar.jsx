@@ -5,9 +5,6 @@ import $ from "jquery";
 const Navbar = ({ height }) => {
   const scrollToElement = e => {
     e.preventDefault();
-    console.log(typeof ($(e.target.hash).offset().top - 80));
-    console.log(height);
-    console.log($(e.target.hash).offset().top - 80);
     $("html, body")
       .stop()
       .animate({ scrollTop: $(e.target.hash).offset().top - 80 }, 1000);
@@ -51,9 +48,7 @@ const Navbar = ({ height }) => {
             </li>
             <li
               className={
-                height >= 988 && height < 1380
-                  ? "nav-item active"
-                  : "nav-item"
+                height >= 988 && height < 1380 ? "nav-item active" : "nav-item"
               }
             >
               <a className="nav-link" href="#skills" onClick={scrollToElement}>
@@ -62,9 +57,7 @@ const Navbar = ({ height }) => {
             </li>
             <li
               className={
-                height >= 1380 && height < 1600
-                  ? "nav-item active"
-                  : "nav-item"
+                height >= 1380 && height < 1600 ? "nav-item active" : "nav-item"
               }
             >
               <a
@@ -75,36 +68,12 @@ const Navbar = ({ height }) => {
                 Projects
               </a>
             </li>
-
-            {/* <li className="nav-item">
-              <a className="nav-link" href="#Blog" onClick={scrollToElement}>
-                Blog
-              </a>
-            </li> */}
-            <li className={
-                height >= 1600
-                  ? "nav-item active"
-                  : "nav-item"
-              }>
+            <li className={height >= 1600 ? "nav-item active" : "nav-item"}>
               <a className="nav-link" href="#contact" onClick={scrollToElement}>
                 Contact
               </a>
             </li>
           </ul>
-          {/* <form className="form-inline my-2 my-lg-0">
-            <input
-              className="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              className="btn btn-outline-success my-2 my-sm-0"
-              type="submit"
-            >
-              Search
-            </button>
-          </form> */}
         </div>
       </nav>
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Modal.css";
 import proj2Preview from "./rsz_trailblazerpreview.png";
 
 const Modal = () => {

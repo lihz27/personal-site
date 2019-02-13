@@ -4,14 +4,12 @@ import { useState, useEffect } from "react";
 const Skills = ({height}) => {
   const [visible, setVisible] = useState(false);
   const toggleStatus = (height) => {
-    console.log(height);
     if (height === 800) {
       setVisible(true);
     }
   }
   useEffect(() => {
     toggleStatus(height);
-    console.log(visible)
   }, [])
   return (
     <section id="skills" className={visible ? "animated zoomIn" : "hide-section"}>
