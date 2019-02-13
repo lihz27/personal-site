@@ -542,3 +542,11 @@ body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom
   color:#fff;
   text-decoration: none;
 }
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+.hide-section {
+  visibility: hidden;
+}

@@ -150,8 +150,6 @@ class Carousel extends Component {
               </div>
             </div>
           </div>
-         
-         
         </Slider>
       </div>
     );

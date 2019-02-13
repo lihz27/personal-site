@@ -24,6 +24,8 @@ const Contact = () => {
     setEmail("");
     setPhone("");
     setMessage("");
+
+    // back-end configuration 
     // axios({
     //   method: "post",
     //   url: `${API_PATH}`,

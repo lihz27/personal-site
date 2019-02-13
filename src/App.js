@@ -33,7 +33,7 @@ const ModalProj4 = lazy(() =>
 const App = () => {
   const [height, setHeight] = useState(false);
   const [renderProjects, setRenderProjects] = useState(false);
-
+  const [renderSkills, setRenderSkills] = useState(false);
   const updateWindowHeight = () => {
     window.onscroll = () => {
       if (window.scrollY >= 180) {
@@ -56,7 +56,7 @@ const App = () => {
       <TopContent />
       <AboutMe />
       <Suspense fallback={<div>Loading...</div>}>
-        <Skills />
+        <Skills height={height}/>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Projects />
