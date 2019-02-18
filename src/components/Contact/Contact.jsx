@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import axios from "axios";
-
-const API_PATH = "http://localhost/test.php";
+// import axios from "axios";
 
 const Contact = () => {
   const [submitStatus, setSubmitStatus] = useState(false);

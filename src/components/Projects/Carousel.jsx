@@ -125,7 +125,7 @@ class Carousel extends Component {
               </div>
               <div className="portfolio-caption">
                 <h4> Deal Or No Deal</h4>
-                <p>Game - JavaScript, JQuery, css</p>
+                <p>Game - JavaScript, JQuery, CSS</p>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ class Carousel extends Component {
               </div>
               <div className="portfolio-caption">
                 <h4> My Peronsal Site</h4>
-                <p>Personal Website - React，Boostrap，SPA</p>
+                <p>Personal Website - React，Bootstrap，SPA</p>
               </div>
             </div>
           </div>
