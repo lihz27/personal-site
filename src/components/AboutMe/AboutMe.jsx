@@ -1,4 +1,5 @@
 import React from "react";
+import SocialButtons from "../Utils/SocialButtons";
 
 const AboutMe = () => {
   return (
@@ -12,38 +13,7 @@ const AboutMe = () => {
             className="img-fluid"
             alt="profile-image"
           />
-          <ul className="profile social-media-buttons">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/jack-li-01051/"
-                title="Linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-linkedin-in fa-2x" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/lihz27"
-                title="Github"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-github fa-2x" />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Facebook">
-                <i className="fab fa-facebook-f fa-2x" />
-              </a>
-            </li>
-            <li>
-              <a href="#" title="Twitter">
-                <i className="fab fa-twitter fa-2x" />
-              </a>
-            </li>
-          </ul>
+          <SocialButtons/>
           <div className="cv-download-container col-md-12">
             <a
               href="https://docs.google.com/document/d/1b99qLI6zT8nb3oF9wApVmfvdwaRGqg8Nkqf2VhsRpuk/edit#"
@@ -62,10 +32,9 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="self-intro col-md-6 animated slideInRight">
-          <h4>Hello! Welcome.</h4>
           <div>
             <p>
-              I am a full stack web developer with hands-on development
+              Hello! I am a full stack web developer with hands-on development
               experience using React, JavaScript, NodeJS, HTML, CSS, and
               BootStrap.
             </p>
@@ -74,7 +43,7 @@ const AboutMe = () => {
               to use user interface.
             </p>
             <p>
-              My past experiences in electrical and electronic engineering field
+              My past experiences in the electrical and electronic engineering field
               have helped me develop problem-solving skills, multi-tasking
               abilities, and attention to detail.
             </p>

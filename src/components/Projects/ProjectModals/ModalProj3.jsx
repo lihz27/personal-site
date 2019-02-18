@@ -35,12 +35,12 @@ const Modal = () => {
                   />
                   <h1 className="fn">Deal Or No Deal</h1>
 
-                  <p>
-                    Game - Javasript, JQuery, CSS
-                  </p>
+                  <p>Game - Javasript, JQuery, CSS</p>
                   <p>
                     <em>
-                    Play a game of deal or no deal! This is a game I built initially after learning JQuery to reinforcement my knowledge.
+                      Play a game of deal or no deal! This is a game I built
+                      initially after learning JQuery to reinforcement my
+                      knowledge.
                     </em>
                   </p>
                   <button type="button" className="modal-btn btn btn-info">
